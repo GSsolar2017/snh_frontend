@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solar Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+
+<div class="sidebar">
+
+  <div class="sidebar-logo">
+
+    <img src="assets/images/65.jpeg"
+       alt="Company Logo">
+
+  </div>
+
+  <p class="heading">GENERAL</p>
+
+  <div class="menu-item" id="dashboard">🏠 Dashboards</div>
+
+  <!-- REPORTING (CLICKABLE) -->
+  <div class="menu-item" onclick="toggleMenu()">
+    🗄 Reporting
+  </div>
+
+  <div id="reportSubmenu" class="submenu-container">
+    <div class="submenu" id="reports">Reports</div>
+    <div class="submenu" id="alerts">Alerts</div>
+  </div>
+
+  <p class="heading">MY DEVICES</p>
+
+  <div class="menu-item" id="active">⚡ Active Devices</div>
+  <div class="menu-item" id="inactive">🐞 Inactive Devices</div>
+
+    <p class="heading">ADMIN</p>
+
+  <div id="adminMenu"></div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-left">
+
+    <span class="menu-icon">☰</span>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="topbar-right">
+
+    <div class="user-box"
+        onclick="toggleLogoutMenu()">
+
+        <span id="usernameDisplay"></span>
+        ▼
+
+    </div>
+
+    <div class="logout-menu"
+      id="logoutMenu">
+
+      <div id="designerToggle"
+            style="display:none;"
+          onclick="toggleDesigner()">
+
+        Hide Dashboard Designer
+
+      </div>
+
+      <div onclick="logout()">
+        Logout
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="main-content" id="content">
+    <h1>Welcome</h1>
+    <p>Select a menu item</p>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

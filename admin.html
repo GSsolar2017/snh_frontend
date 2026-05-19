@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <h2 class="logo">GS SOLAR ADMIN</h2>
+
+  <p class="heading">ADMIN PANEL</p>
+
+  <!-- SETTINGS -->
+  <div class="menu-item" onclick="toggleSettingsMenu()">
+    ⚙ Settings
+  </div>
+
+  <div id="settingsSubmenu" class="submenu-container">
+
+    <div class="submenu" id="subscriptions">
+      Manage Subscriptions
+    </div>
+
+    <div class="submenu" id="manageDevices">
+      Manage Devices
+    </div>
+
+    <div class="submenu" id="deviceProfiles">
+      Manage Device Profiles
+    </div>
+
+    <div class="submenu" id="manageUsers">
+      Manage Users
+    </div>
+
+    <div class="submenu" id="manageGraphs">
+      Manage Graphs
+    </div>
+
+    <div class="submenu" id="notifications">
+      User Notifications
+    </div>
+
+    <div class="submenu" id="emailProviders">
+      Email Alert Providers
+    </div>
+
+    <div class="submenu" id="accountDetails">
+      Account Details
+    </div>
+
+    <div class="submenu" id="manageDashboards">
+      Manage Dashboards
+    </div>
+
+    <div class="submenu" id="manageCompanies">
+      Manage Companies
+    </div>
+
+  </div>
+
+  <div class="menu-item" id="logout">
+    🚪 Logout
+  </div>
+
+</div>
+
+<div class="main-content" id="content">
+
+  <h1>Admin Panel</h1>
+  <p>Select any settings option</p>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
