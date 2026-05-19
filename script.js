@@ -1,10 +1,10 @@
  const API_BASE =
-"https://snh-backend-3tg6.onrender.com/api";
+"https://snh-backend-3tg6.onrender.com";
 
 async function fetchLiveData() {
 
   const response =
-   await fetch(`${API_BASE}/site/snh/live`);
+   await fetch(`${API_BASE}/api/site/snh/live`);
 
  if (!response.ok) {
   throw new Error('API Failed');
@@ -21,7 +21,7 @@ async function fetchEnergyGraph() {
 
   const response =
     await fetch(
-      `${API_BASE}/site/snh/graphs/energy-sources?date=${today}`
+      `${API_BASE}/api/site/snh/graphs/energy-sources?date=${today}`
     );
 
   return await response.json();
@@ -1304,7 +1304,7 @@ async function loadLiveCards() {
 
    const response =
       await fetch(
-         'https://snh-backend-3tg6.onrender.com/api/api/site/snh/live'
+         'https://snh-backend-3tg6.onrender.com/api/site/snh/live'
       );
 
    const data =
@@ -1316,7 +1316,7 @@ async function loadLiveCards() {
 
    const summaryResponse =
       await fetch(
-         'https://snh-backend-3tg6.onrender.com/api/api/site/snh/energy-summary'
+         'https://snh-backend-3tg6.onrender.com/api/site/snh/energy-summary'
       );
 
    const summary =
