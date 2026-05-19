@@ -1,5 +1,5 @@
  const API_BASE =
-'http://localhost:3000/api';
+"https://snh-backend-3tg6.onrender.com/api";
 
 async function fetchLiveData() {
 
