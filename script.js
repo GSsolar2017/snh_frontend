@@ -35,8 +35,12 @@ async function fetchInverterGraph() {
 
   const response =
     await fetch(
-      `${API_BASE}/site/snh/graphs/inverters?date=${today}`
+      `${API_BASE}/api/site/snh/graphs/inverters?date=${today}`
     );
+
+  if (!response.ok) {
+    throw new Error('Inverter API Failed');
+  }
 
   return await response.json();
 
@@ -49,8 +53,12 @@ async function fetchImportExportGraph() {
 
   const response =
     await fetch(
-      `${API_BASE}/site/snh/graphs/import-export?date=${today}`
+      `${API_BASE}/api/site/snh/graphs/import-export?date=${today}`
     );
+
+  if (!response.ok) {
+    throw new Error('Import Export API Failed');
+  }
 
   return await response.json();
 
@@ -63,8 +71,12 @@ async function fetchSolarGenerationGraph() {
 
   const response =
     await fetch(
-      `${API_BASE}/site/snh/graphs/solar-generation?date=${today}`
+      `${API_BASE}/api/site/snh/graphs/solar-generation?date=${today}`
     );
+
+  if (!response.ok) {
+    throw new Error('Solar Generation API Failed');
+  }
 
   return await response.json();
 
