@@ -1304,7 +1304,7 @@ async function loadLiveCards() {
 
    const response =
       await fetch(
-         'http://localhost:3000/api/site/snh/live'
+         'http://https://snh-backend-3tg6.onrender.com/api/api/site/snh/live'
       );
 
    const data =
@@ -1316,7 +1316,7 @@ async function loadLiveCards() {
 
    const summaryResponse =
       await fetch(
-         'http://localhost:3000/api/site/snh/energy-summary'
+         'http://https://snh-backend-3tg6.onrender.com/api/api/site/snh/energy-summary'
       );
 
    const summary =
